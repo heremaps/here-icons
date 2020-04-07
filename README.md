@@ -14,7 +14,7 @@ Carto icons are part of the map iconography set. Carto icons are used exclusivel
 
 ## Point of Interest
 
-Whenever a place is displayed on a map, the Places Category System defines which carto icon in what color is representing it.  
+Whenever a place is displayed on a map, the Places Category System defines which carto icon is representing it.  
 
 POI icons follows the primary category system used for HERE Map Content places. Read the [developer guide](https://docs.in.here.com/static/24675/250052/html/topics-places/places-category-system-full.html) on how to use the category system in your project.
 
