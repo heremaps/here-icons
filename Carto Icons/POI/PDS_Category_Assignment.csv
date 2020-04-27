@@ -93,7 +93,7 @@ Main Category ID;Second Level Category ID;ICON_ID;PDS_CAT_NAME;ICON_PATH_DEFAULT
 ;;400-4100-0339;Monorail;400-4100-0339_monorail.svg;;#01A2FF;;
 ;;400-4100-0340;Aerial Tramway;400-4100-0340_aerial-tramway.svg;;#01A2FF;;
 ;;400-4100-0341;Bus Rapid Transit;;;#01A2FF;;
-;;400-4100-0342;Inclined Rail;400-4100-0339_inclined-rail.svg;;#01A2FF;;
+;;400-4100-0342;Inclined Rail;400-4100-0342_inclined-rail.svg;;#01A2FF;;
 ;;400-4100-0347;Bicycle Sharing Location;;;#01A2FF;;
 ;;400-4100-0348;Bicycle Parking;;;#01A2FF;;
 ;4200 Cargo Transportation;400-4200-0048;Weigh Station;;;#01A2FF;;
