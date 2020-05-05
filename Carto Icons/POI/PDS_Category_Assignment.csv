@@ -56,7 +56,7 @@ Main Category ID;Second Level Category ID;ICON_ID;PDS_CAT_NAME;ICON_PATH_DEFAULT
 ;;300-3200-0309;Other Place of Worship;300-3200-0000_religious-place.svg;;#B744CB;;
 ;;300-3200-0375;Gurdwara;300-3200-0000_religious-place.svg;;#B744CB;;
 ;;;;;;;;
-350 Natural and Geographical;3500 Body of Water;350-3500-0233;Body of water;;;#009196;;
+350 Natural and Geographical;3500 Body of Water;350-3500-0233;Body of water;000-0000-0000_generic.svg;;#009196;;
 ;;350-3500-0234;Reservoir;;;#009196;;
 ;;350-3500-0235;Waterfall;;;#009196;;
 ;;350-3500-0300;Bay-Harbor;900-9200-0219_marina.svg;;#009196;;
@@ -149,7 +149,7 @@ Main Category ID;Second Level Category ID;ICON_ID;PDS_CAT_NAME;ICON_PATH_DEFAULT
 ;;550-5520-0228;Animal Park;550-5520-0208_zoo.svg;;#00A167;;
 ;;550-5520-0357;Water Park;;;#00A167;;
 ;;;;;;;;
-600 Shopping;6000 Convenience Store;600-6000-0061;Convenience Store;600-6100-0062_shopping-mall.svg;;;;
+600 Shopping;6000 Convenience Store;600-6000-0061;Convenience Store;600-6100-0062_shopping-mall.svg;;#D61F82;;
 ;6100 Mall-ShoppingComplex;600-6100-0062;Shopping Mall;600-6100-0062_shopping-mall.svg;;#D61F82;;
 ;6200 Department Store;600-6200-0063;Department Store;600-6100-0062_shopping-mall.svg;;#D61F82;;
 ;6300 Food and Drink;600-6300-0064;Food-Beverage Specialty Store;;;#D61F82;;
@@ -403,7 +403,7 @@ Main Category ID;Second Level Category ID;ICON_ID;PDS_CAT_NAME;ICON_PATH_DEFAULT
 ;;800-8700-0296;Clubhouse;;;#C18000;;
 ;;800-8700-0298;Registration Office;;;#C18000;;
 ;;;;;;;;
-900 Areas and Buildings;9100 City, Town or Village;900-9100-0000;City, Town or Village;;;#6A84C2;;
+900 Areas and Buildings;9100 City, Town or Village;900-9100-0000;City, Town or Village;900-9300-0000_building.svg;;#6A84C2;;
 ;;900-9100-0214;Hamlet;;;#6A84C2;;
 ;;900-9100-0215;Named Place;;;#6A84C2;;
 ;;900-9100-0216;Neighborhood;;;#6A84C2;;
