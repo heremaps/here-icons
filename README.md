@@ -8,7 +8,7 @@ The icons are designed under the HERE design guidelines.
 At HERE we differentiate between **UI icons** and **Carto icons**. 
  
  
-##Carto icons
+## Carto icons
 
 Carto icons are used exclusively on our maps. They represent **points of interests (POI)**, namely, a particular place in a defined location that can be categorized. (i.e. Hospitals, Parking garages, Museums, etc.) These are the icons you can see when browsing the map or performing a map search request. These icons are optimized for the display on a map, where these elements are rendered at a ver small size, and therefore shouldn’t be used in other contexts.
 
@@ -16,20 +16,20 @@ Carto icons are used exclusively on our maps. They represent **points of interes
 
 * The Places Categroy System assignment table is availabe as .excel and .cvs files in the Carto/POI folder (PDS Cattegory Assignment)[^2]. 
 
-##UI icons
+## UI icons
 
 UI icons are visual representations of objects, services, tools and functionalities. They enhance the user experience by offering an intuitive visual cue to actions and content in general.
 
 UI icons can be used together with other UI elements to make the content easier to understand. 
 
 
-####Stylistic variations
+#### Stylistic variations
 24px UI icons are availabe in 2 different stylistic variations:
 
 * Solid
 * Outline
 
-####Categories
+#### Categories
 UI iconography has been grouped in categories with the aim of make it easier to browse through this extense collection.
 
 * Core-UI
@@ -48,7 +48,7 @@ UI iconography has been grouped in categories with the aim of make it easier to 
 
 These categories are only orientative. Choose your UI icons using your own good judgement for the needs of your product.
 
-##Guidance icons
+## Guidance icons
 
 Guidance icons are designed to be used in turn-by-turn navigation applications.
 
@@ -65,7 +65,7 @@ Guidance icons are designed to be used in turn-by-turn navigation applications.
 
 
 
-#Icon Sizes
+# Icon Sizes
 
 Icon Type      |80px| 24px | 16px | 8px
 :------------- |:---:|:----:|:----:|:---:
