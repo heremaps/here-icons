@@ -1,8 +1,8 @@
-# Icons by HERE Technologies
+# HDS Icon Library
 
-This is the source repository for the official icon set from HERE Technologies.
+This is the source repository for the official icon set for the HERE Design System
 
-The icons are designed under the HERE design guidelines.
+The icons are designed under the HDS guidelines.
 
 
 At HERE we differentiate between **UI icons** and **Carto icons**. 
