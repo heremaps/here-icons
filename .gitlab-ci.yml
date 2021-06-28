@@ -1,0 +1,22 @@
+# You can override the included template(s) by including variable overrides
+# See https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#priority-of-environment-variables
+
+stages:
+  - test
+
+
+testing:
+  image: "${DOCKER_IMAGE}"
+  stage: test
+  script:
+    - git clone ${HDS_WEB_REPOSITORY_URL} hdsweb
+    - cd hdsweb
+    - yarn install --offline --frozen-lockfile
+    - yarn build:cli
+    - hds-cli icons --repo=${ICON_REPOSITORY_URL}
+  only:
+    refs:
+      - merge_requests
+      - master
