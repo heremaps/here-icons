@@ -23,7 +23,8 @@ testing:
     - cd hdsweb
     - yarn install --offline --frozen-lockfile
     - yarn build:cli
-    - hds-cli icons --repo=$ICON_REPOSITORY_URL
+    - yarn link:cli
+    - npx hds-cli icons --repo=$ICON_REPOSITORY_URL
   only:
     refs:
       - merge_requests
