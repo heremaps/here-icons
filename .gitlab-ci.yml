@@ -1,0 +1,33 @@
+# You can override the included template(s) by including variable overrides
+# See https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#priority-of-environment-variables
+
+stages:
+  - test
+
+
+testing:
+  image: "${DOCKER_IMAGE}"
+  stage: test
+  before_script:
+    - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - git clone $HDS_WEB_REPOSITORY_URL hdsweb
+    - cd hdsweb
+    - yarn install --offline --frozen-lockfile
+    - yarn build:cli
+    - yarn link:cli
+    - npx hds-cli icons --repo=$ICON_REPOSITORY_URL
+    - cd packages/hds-iconlibrary
+    - yarn build
+  only:
+    refs:
+      - merge_requests
+      - master
