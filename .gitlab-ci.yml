@@ -27,7 +27,7 @@ testing:
     - npx hds-cli icons --repo=$ICON_REPOSITORY_URL
     - cd packages/hds-base
     - yarn build
-    - cd ../packages/hds-iconlibrary
+    - cd ../hds-iconlibrary
     - yarn build
   only:
     refs:
