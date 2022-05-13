@@ -6,5 +6,17 @@
 <!-- fill the date with the next action -->
 /due
 
+## Acceptance criteria
+### Figma
+- [ ] All vector shapes are unified into one
+- [ ] Keywords are added
+- [ ] All variants (24px solid and outline, 16px solid, 8px solid (optional))
+- [ ] Naming convention is followed 
+
+### Asset export
+- [ ] svg
+- [ ] 1x and 2x png
+- [ ] Naming convention is followed
+
 ## References
 <!— Add links to designs or examples by simply copy paste them. Screenshots can just be attached here via drag & drop or by using the “Attach a file” option at the lower right. —>
