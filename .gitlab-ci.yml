@@ -24,7 +24,7 @@ testing:
     - yarn install --offline --frozen-lockfile
     - yarn build:cli
     - yarn link:cli
-    - npx hds-cli icons --repo=$ICON_REPOSITORY_URL
+    - npx hds-cli icons-fonts --repo=$ICON_REPOSITORY_URL
     - cd packages/hds-base
     - yarn build
     - cd ../hds-iconlibrary
