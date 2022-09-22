@@ -25,6 +25,7 @@ testing:
     - yarn build:cli
     - yarn link:cli
     - yarn build:icons --repo=$ICON_REPOSITORY_URL
+    - yarn build:postcss
     - yarn build:style
     - cd packages/hds-base
     - yarn build
