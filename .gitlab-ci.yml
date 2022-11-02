@@ -6,9 +6,8 @@
 stages:
   - test
 
-
 testing:
-  image: "${DOCKER_IMAGE}"
+  image: node:latest
   stage: test
   before_script:
     - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
@@ -21,10 +20,11 @@ testing:
   script:
     - git clone $HDS_WEB_REPOSITORY_URL hdsweb
     - cd hdsweb
+    - yarn global add lerna
     - yarn install --offline --frozen-lockfile
     - yarn build:cli
     - yarn link:cli
-    - yarn build:icons --repo=$ICON_REPOSITORY_URL
+    - yarn build:icons --repo=file://.
     - yarn build:postcss
     - yarn build:style
     - cd packages/hds-base
