@@ -19,4 +19,10 @@
 - [ ] Naming convention is followed
 
 ## References
-<!— Add links to designs or examples by simply copy paste them. Screenshots can just be attached here via drag & drop or by using the “Attach a file” option at the lower right. —>
+## References
+<!-- Add links to designs or examples by simply copy paste them. Screenshots can just be attached here via drag & drop or by using the “Attach a file” option at the lower right. -->
+
+/label lib::iconography
+/label priority::medium
+/label org::cartography
+/label "status::ready for design"
