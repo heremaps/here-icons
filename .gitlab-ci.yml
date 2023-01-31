@@ -7,7 +7,7 @@ stages:
   - test
 
 testing:
-  image: node:latest
+  image: docker.artifactory-collab.tool.in.here.com/node:latest
   stage: test
   before_script:
     - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
