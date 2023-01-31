@@ -24,7 +24,7 @@ testing:
     - yarn install --offline --frozen-lockfile
     - yarn build:cli
     - yarn link:cli
-    - hds-cli icons-fonts --repo=/builds/design/here-design-system/design-assets/hds-icon-library --internalRepo=${INTERNAL_ICON_REPOSITORY_URL}
+    - yarn build:icons --repo=/builds/design/here-design-system/design-assets/hds-icon-library --internalRepo=${INTERNAL_ICON_REPOSITORY_URL}
     - yarn build:postcss
     - yarn build:style
     - cd packages/hds-base
