@@ -17,6 +17,7 @@ testing:
     - chmod 700 ~/.ssh
     - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
+    - echo "$SSH_CONFIG" >> ~/.ssh/config
   script:
     - git clone $HDS_WEB_REPOSITORY_URL hdsweb
     - cd hdsweb
