@@ -1,0 +1,55 @@
+SPDXID: "SPDXRef-DOCUMENT"
+spdxVersion: "SPDX-2.2"
+creationInfo:
+  created: "2024-04-22T14:25:11Z"
+  creators:
+  - "Organization: HERE Global B.V."
+  - "Person: Christoph Purnomo"
+  licenseListVersion: "3.9"
+name: "hds-icon-library"
+dataLicense: "CC BY 4.0"
+documentNamespace: "http://here.com/spdx/spdx-document-hds-icon-library"
+documentDescribes:
+- "SPDXRef-Package-hds-icon-library"
+externalDocumentRefs:
+  - externalDocumentId: "DocumentRef-curl-7.70.0"
+    spdxDocument: "../curl/package.spdx.yml"
+    checksum:
+      algorithm: "SHA1"
+      checksumValue: "73d64ad650d6e1fa418b70985f24d937d1151186"
+  - externalDocumentId: "DocumentRef-openssl-1.1.1g"
+    spdxDocument: "../openssl/package.spdx.yml"
+    checksum:
+      algorithm: "SHA1"
+      checksumValue: "3d38c716b5d7f75c893b8b2720b7c85aca7776ae"
+  - externalDocumentId: "DocumentRef-zlib-1.2.11"
+    spdxDocument: "../zlib/package.spdx.yml"
+    checksum:
+      algorithm: "SHA1"
+      checksumValue: "c3d22d3fbff30a845d57e9fa19e0b5f453b7b0ee"
+packages:
+- SPDXID: "SPDXRef-Package-hds-icon-library"
+  description: "HERE icons"
+  copyrightText: "Copyright (c) 2024, The ORT developers"
+  downloadLocation: "ssh://git@main.gitlab.in.here.com:3389/design/here-design-system/design-assets/hds-icon-library.git"
+  externalRefs:
+  - referenceCategory: "SECURITY"
+    referenceLocator: "cpe:2.3:a:test:my-lib:8.88.8:*:*:*:*:*:*:*"
+    referenceType: "cpe23Type"
+  filesAnalyzed: false
+  homepage: "https://design.in.here.com"
+  licenseConcluded: "NOASSERTION"
+  licenseDeclared: "my-lib"
+  name: "my-lib"
+  versionInfo: "8.88.8"
+  originator: "Person: Christoph Purnomo (christoph.purnomo@here.com)"
+relationships:
+- spdxElementId: "DocumentRef-curl-7.70.0:SPDXRef-Package-curl"
+  relationshipType: "DEPENDENCY_OF"
+  relatedSpdxElement: "SPDXRef-Package-my-lib"
+- spdxElementId: "DocumentRef-openssl-1.1.1g:SPDXRef-Package-openssl"
+  relationshipType: "DEPENDENCY_OF"
+  relatedSpdxElement: "SPDXRef-Package-my-lib"
+- spdxElementId: "SPDXRef-Package-my-lib"
+  relationshipType: "DYNAMIC_LINK"
+  relatedSpdxElement: "DocumentRef-curl-7.70.0:SPDXRef-Package-curl"
