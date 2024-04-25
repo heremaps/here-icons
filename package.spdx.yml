@@ -11,22 +11,6 @@ dataLicense: "CC BY 4.0"
 documentNamespace: "http://here.com/spdx/spdx-document-hds-icon-library"
 documentDescribes:
 - "SPDXRef-Package-hds-icon-library"
-externalDocumentRefs:
-  - externalDocumentId: "DocumentRef-curl-7.70.0"
-    spdxDocument: "../curl/package.spdx.yml"
-    checksum:
-      algorithm: "SHA1"
-      checksumValue: "73d64ad650d6e1fa418b70985f24d937d1151186"
-  - externalDocumentId: "DocumentRef-openssl-1.1.1g"
-    spdxDocument: "../openssl/package.spdx.yml"
-    checksum:
-      algorithm: "SHA1"
-      checksumValue: "3d38c716b5d7f75c893b8b2720b7c85aca7776ae"
-  - externalDocumentId: "DocumentRef-zlib-1.2.11"
-    spdxDocument: "../zlib/package.spdx.yml"
-    checksum:
-      algorithm: "SHA1"
-      checksumValue: "c3d22d3fbff30a845d57e9fa19e0b5f453b7b0ee"
 packages:
 - SPDXID: "SPDXRef-Package-hds-icon-library"
   description: "HERE icons"
@@ -43,13 +27,3 @@ packages:
   name: "my-lib"
   versionInfo: "8.88.8"
   originator: "Person: Christoph Purnomo (christoph.purnomo@here.com)"
-relationships:
-- spdxElementId: "DocumentRef-curl-7.70.0:SPDXRef-Package-curl"
-  relationshipType: "DEPENDENCY_OF"
-  relatedSpdxElement: "SPDXRef-Package-my-lib"
-- spdxElementId: "DocumentRef-openssl-1.1.1g:SPDXRef-Package-openssl"
-  relationshipType: "DEPENDENCY_OF"
-  relatedSpdxElement: "SPDXRef-Package-my-lib"
-- spdxElementId: "SPDXRef-Package-my-lib"
-  relationshipType: "DYNAMIC_LINK"
-  relatedSpdxElement: "DocumentRef-curl-7.70.0:SPDXRef-Package-curl"
