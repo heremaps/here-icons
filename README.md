@@ -40,8 +40,17 @@ Icons have been grouped in hopes of making it easier to browse.
 - **[Devices and sensors](icons/devices-sensors)**: Hardware, sensors, and devices 
  
 - **[Discovery and sharing](icons/discovery-sharing)**: Actions and items for finding, filtering, and viewing 
+
+- **[File](icons/file)**:  file organization
  
-- **[Guidance icons](icons/guidance-tools)**: Road signs and signals to aid drivers. Created on a grid of 80x80 px with a stroke weight of 6 px. They are difficult to read at 24 px. 
+- **[Guidance icons](icons/guidance-tools)**: Symbols for navigation
+    - **[Lane Assistance](icons/guidance-icons/lane-assistance)**: Icons to guide lane navigation
+        - **[Directions](icons/guidance-icons/lane-assistance/directions)**: lane directions
+        - **[Dividers](icons/guidance-icons/lane-assistance/dividers)**: lane divider types
+        - **[Lanes](icons/guidance-icons/lane-assistance/lanes)**: lane types
+    - **[Manoeuvers SDK](icons/guidance-icons/manoeuvers-sdk)**:  Icons to determine the direction of travel for HERE SDK
+    - **[Manoeuvers](icons/guidance-icons/manoeuvers)**:  Additional icons for travel direction
+    - **[Road Signs](icons/guidance-icons/road-signs)**: Signs that instruct or inform road users
  
 - **[Map view](icons/map-view)**: Actions for viewing maps 
  
