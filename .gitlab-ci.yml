@@ -7,7 +7,8 @@ stages:
   - test
 
 testing:
-  image: main-registry.gitlab.in.here.com/design/here-design-system/tools/hds-deployment-ci/node:lts-hydrogen
+  #image: main-registry.gitlab.in.here.com/design/here-design-system/tools/hds-deployment-ci/node:lts-hydrogen
+  image: main-registry.gitlab.in.here.com/design/here-design-system/web/hds/hds-base:latest
   stage: test
   before_script:
     - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
@@ -21,8 +22,10 @@ testing:
   script:
     - git clone $HDS_WEB_REPOSITORY_URL hdsweb
     - cd hdsweb
-    - yarn global add lerna
-    - yarn install --offline --frozen-lockfile
+    - corepack enable
+    - yarn install --immutable
+    #- yarn global add lerna
+    #- yarn install --offline --frozen-lockfile
     - yarn build:cli
     - yarn link:cli
     - yarn build:icons --repo=/builds/design/here-design-system/design-assets/hds-icon-library --internalRepo=${INTERNAL_ICON_REPOSITORY_URL}
