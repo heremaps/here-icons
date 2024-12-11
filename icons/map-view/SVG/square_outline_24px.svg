@@ -1,6 +1,3 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_17110_25434" fill="white">
-<rect x="4" y="4" width="16" height="16" rx="1"/>
-</mask>
-<rect x="4" y="4" width="16" height="16" rx="1" stroke="#0F1621" stroke-width="4" mask="url(#path-1-inside-1_17110_25434)"/>
+<path d="M6 6H18V18H6V6ZM5 4C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4H5Z" fill="#0F1621"/>
 </svg>
