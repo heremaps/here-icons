@@ -8,22 +8,18 @@ creationInfo:
   licenseListVersion: "3.9"
 name: "hds-icon-library"
 dataLicense: "CC BY 4.0"
-documentNamespace: "http://here.com/spdx/spdx-document-hds-icon-library"
+documentNamespace: http://here.com/spdx/spdx-document-hds-icon-library
 documentDescribes:
 - "SPDXRef-Package-hds-icon-library"
 packages:
 - SPDXID: "SPDXRef-Package-hds-icon-library"
   description: "HERE icons"
-  copyrightText: "Copyright (c) 2024, The ORT developers"
-  downloadLocation: "ssh://git@main.gitlab.in.here.com:3389/design/here-design-system/design-assets/hds-icon-library.git"
-  externalRefs:
-  - referenceCategory: "SECURITY"
-    referenceLocator: "cpe:2.3:a:test:my-lib:8.88.8:*:*:*:*:*:*:*"
-    referenceType: "cpe23Type"
+  copyrightText: "Copyright (c) 2025 Global B.V. and its affiliate(s). All rights reserved"
+  downloadLocation: "https://github.com/heremaps/here-icons"
   filesAnalyzed: false
   homepage: "https://design.in.here.com"
-  licenseConcluded: "NOASSERTION"
-  licenseDeclared: "my-lib"
-  name: "my-lib"
-  versionInfo: "8.88.8"
+  licenseConcluded: "CC-BY-4.0"
+  licenseDeclared: "CC-BY-4.0"
+  name: "here-hds-icon-library"
+  versionInfo: "1.3.3"
   originator: "Person: Christoph Purnomo (christoph.purnomo@here.com)"
